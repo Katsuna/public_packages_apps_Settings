@@ -71,6 +71,11 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/summary_placeholder"/>
 
+        <!-- Katsuna version -->
+        <Preference android:key="katsuna_version"
+                android:title="@string/katsuna_version"
+                android:summary="@string/summary_placeholder" />
+
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:title="@string/security_patch"
