@@ -3,5 +3,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	<!-- Device info: name of the version of the Katsuna ROM currently installed -->
 	<string name="katsuna_version">Katsuna version</string>
+	<string name="katsuna_settings">Katsuna settings</string>
 
 </resources>

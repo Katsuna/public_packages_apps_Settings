@@ -102,7 +102,7 @@
         <!-- Settings -->
 
         <activity android:name=".katsuna.KatsunaSettings"
-            android:label="@string/settings_label_launcher"
+            android:label="@string/katsuna_settings"
             android:launchMode="singleTask">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.MAIN" />
@@ -132,6 +132,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
         </activity-alias>
