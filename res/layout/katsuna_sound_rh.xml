@@ -114,7 +114,10 @@
                         android:layout_toEndOf="@id/media_volume_silent"
                         android:layout_toStartOf="@id/media_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 
@@ -184,7 +187,10 @@
                         android:layout_toEndOf="@id/alarm_volume_silent"
                         android:layout_toStartOf="@id/alarm_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 
@@ -255,7 +261,10 @@
                         android:layout_toEndOf="@id/ring_volume_silent"
                         android:layout_toStartOf="@id/ring_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 

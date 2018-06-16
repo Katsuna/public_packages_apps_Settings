@@ -118,7 +118,10 @@
                         android:layout_toEndOf="@id/media_volume_silent"
                         android:layout_toStartOf="@id/media_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 
@@ -158,8 +161,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
                     android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="@dimen/settings_controls_margin">
 
                     <com.katsuna.commons.controls.KatsunaTextView
@@ -190,7 +193,10 @@
                         android:layout_toEndOf="@id/alarm_volume_silent"
                         android:layout_toStartOf="@id/alarm_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 
@@ -210,8 +216,8 @@
                     <com.katsuna.commons.controls.KatsunaImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
                         android:src="@drawable/ic_notifications_grey6c_24dp"
                         app:colorProfileKey="PRIMARY_COLOR_2"
                         tools:ignore="ContentDescription" />
@@ -221,8 +227,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:gravity="end"
                         android:layout_marginEnd="@dimen/settings_label_margin_start"
+                        android:gravity="end"
                         android:text="@string/kts_ring_volume"
                         app:sizeProfileKey="BODY_2" />
 
@@ -231,8 +237,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
                     android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="@dimen/settings_controls_margin">
 
                     <com.katsuna.commons.controls.KatsunaTextView
@@ -263,7 +269,10 @@
                         android:layout_toEndOf="@id/ring_volume_silent"
                         android:layout_toStartOf="@id/ring_volume_loud"
                         android:background="@null"
-                        android:progressDrawable="@drawable/common_seekbar_progress" />
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:progressDrawable="@drawable/common_seekbar_progress"
+                        android:thumbOffset="24dp" />
 
                 </RelativeLayout>
 

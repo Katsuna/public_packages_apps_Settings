@@ -84,6 +84,9 @@
                     android:layout_centerVertical="true"
                     android:layout_toEndOf="@id/brightness_label_dark"
                     android:layout_toStartOf="@id/brightness_label_light"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:thumbOffset="24dp"
                     android:background="@null"
                     android:progressDrawable="@drawable/common_seekbar_progress" />
 
