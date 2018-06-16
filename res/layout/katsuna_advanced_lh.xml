@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/KatsunaSetting">
+
+    <RelativeLayout
+        android:id="@+id/advanced_initial_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.katsuna.commons.controls.KatsunaImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/setting_image_margin_start"
+            android:src="@drawable/ic_settings_28dp"
+            tools:ignore="ContentDescription" />
+
+        <com.katsuna.commons.controls.KatsunaTextView
+            android:id="@+id/setting_label"
+            style="@style/KatsunaSettingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/settings_label_margin_start"
+            android:gravity="end"
+            android:text="@string/advanced_settings"
+            app:sizeProfileKey="SUBHEADER" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/KatsunaSetting">
+
+    <RelativeLayout
+        android:id="@+id/update_initial_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.katsuna.commons.controls.KatsunaImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/setting_image_margin_start"
+            android:src="@drawable/ic_sync_28dp"
+            tools:ignore="ContentDescription" />
+
+        <com.katsuna.commons.controls.KatsunaTextView
+            android:id="@+id/setting_label"
+            style="@style/KatsunaSettingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/settings_label_margin_start"
+            android:text="@string/kts_update"
+            app:sizeProfileKey="SUBHEADER" />
+
+        <com.katsuna.commons.controls.KatsunaButton
+            android:id="@+id/update_more"
+            style="@style/KatsunaMoreButton"
+            app:sizeProfileKey="SUBHEADER" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/update_expanded_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/settings_label_margin_start"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/settings_controls_margin">
+
+            <ImageView
+                android:id="@+id/refresh_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_refresh_grey6c_24dp" />
+
+            <ImageView
+                android:id="@+id/check_update_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_sync_grey6c_24dp" />
+
+            <TextView
+                android:id="@+id/check_update_label"
+                style="@style/settings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/check_update_icon"
+                android:layout_toStartOf="@id/refresh_icon"
+                android:text="@string/kts_check_update" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/settings_controls_margin">
+
+            <TextView
+                android:id="@+id/last_update_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/last_update_name" />
+
+            <ImageView
+                android:id="@+id/last_update_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_system_update_grey6c_24dp" />
+
+            <TextView
+                android:id="@+id/last_update_label"
+                style="@style/settings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/last_update_icon"
+                android:layout_toStartOf="@id/last_update_name"
+                android:text="@string/kts_last_update" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

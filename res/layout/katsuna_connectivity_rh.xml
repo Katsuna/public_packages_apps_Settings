@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/katsuna_card_handler" />
+
+    <LinearLayout style="@style/KatsunaSetting">
+
+        <RelativeLayout
+            android:id="@+id/connectivity_initial_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.katsuna.commons.controls.KatsunaImageView
+                android:id="@+id/setting_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/setting_image_margin_start"
+                android:src="@drawable/ic_wifi_black_28dp"
+                tools:ignore="ContentDescription" />
+
+            <com.katsuna.commons.controls.KatsunaTextView
+                android:id="@+id/setting_label"
+                style="@style/KatsunaSettingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/settings_label_margin_start"
+                android:layout_toStartOf="@+id/connectivity_more"
+                android:text="@string/kts_connectivity"
+                app:sizeProfileKey="SUBHEADER" />
+
+            <com.katsuna.commons.controls.KatsunaButton
+                android:id="@+id/connectivity_more"
+                style="@style/KatsunaMoreButton"
+                app:sizeProfileKey="SUBHEADER" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/connectivity_expanded_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/katsuna_setting_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/settings_label_margin_start"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaToggleButton
+                        android:id="@+id/wifi_toggle"
+                        style="@style/KatsunaToggle"
+                        app:sizeProfileKey="BODY_1" />
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:id="@+id/wifi_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_signal_wifi_4_bar_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        style="@style/settings_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/wifi_icon"
+                        android:layout_toStartOf="@id/wifi_toggle"
+                        android:text="@string/kts_wifi"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/katsuna_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+
+                    <com.katsuna.commons.controls.KatsunaToggleButton
+                        android:id="@+id/cellular_toggle"
+                        style="@style/KatsunaToggle"
+                        app:sizeProfileKey="BODY_1" />
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:id="@+id/cellular_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_signal_cellular_4_bar_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        style="@style/settings_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/cellular_icon"
+                        android:layout_toStartOf="@id/cellular_toggle"
+                        android:text="@string/kts_mobile"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/katsuna_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaToggleButton
+                        android:id="@+id/bluetooth_toggle"
+                        style="@style/KatsunaToggle"
+                        app:sizeProfileKey="BODY_1" />
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:id="@+id/bluetooth_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_bluetooth_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        style="@style/settings_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/bluetooth_icon"
+                        android:layout_toStartOf="@id/bluetooth_toggle"
+                        android:text="@string/bluetooth"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/katsuna_divider" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

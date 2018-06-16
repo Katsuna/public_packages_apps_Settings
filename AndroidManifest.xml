@@ -87,6 +87,8 @@
     <uses-permission android:name="android.permission.READ_PRINT_SERVICES" />
     <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
 
+    <uses-permission android:name="com.katsuna.services.datastore.permission.preferences" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
@@ -102,7 +104,7 @@
         <!-- Settings -->
 
         <activity android:name=".katsuna.KatsunaSettings"
-            android:label="@string/katsuna_settings"
+            android:label="@string/settings_label_launcher"
             android:launchMode="singleTask">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.MAIN" />
@@ -132,7 +134,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
         </activity-alias>

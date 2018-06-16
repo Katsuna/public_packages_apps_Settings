@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="settings_label">
+        <item name="android:textSize">@dimen/qsetting_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/common_grey600</item>
+    </style>
+
+    <style name="KatsunaCard">
+        <item name="cardBackgroundColor">@color/common_grey50</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:layout_marginStart">1dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="KatsunaText" />
+
+    <style name="KatsunaText.SettingsCategory">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:minHeight">19dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/common_black87</item>
+    </style>
+
+    <style name="KatsunaSetting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="KatsunaSettingLabel">
+        <item name="android:textColor">@color/common_black54</item>
+    </style>
+
+    <style name="KatsunaMoreButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/more_bg</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:drawableStart">@drawable/ic_settings_grey600_28dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxWidth">@dimen/more_button_width</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:text">@string/common_more</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/common_black54</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="KatsunaMoreButton.LeftHanded">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">false</item>
+    </style>
+
+    <style name="KatsunaToggle">
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textOn">@string/common_on</item>
+        <item name="android:textOff">@string/common_off</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_width">@dimen/common_toggle_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="KatsunaToggle.LeftHanded">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="12dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/quick_access_settings_card"
+            style="@style/KatsunaCard">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/quick_access_card_handler"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/common_grey300" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_quick_access_settings"
+                    style="@style/KatsunaText.SettingsCategory"
+                    android:text="@string/quick_access_settings" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    layout="@layout/katsuna_brightness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/sound_setting"
+                    layout="@layout/katsuna_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/connectivity_setting"
+                    layout="@layout/katsuna_connectivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/location_setting"
+                    layout="@layout/katsuna_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/update_setting"
+                    layout="@layout/katsuna_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/notification_setting"
+                    layout="@layout/katsuna_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/more_setting"
+                    layout="@layout/katsuna_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/usability_settings_card"
+            style="@style/KatsunaCard">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/usability_card_handler"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/common_grey300" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_usability_settings"
+                    style="@style/KatsunaText.SettingsCategory"
+                    android:text="@string/usability_settings" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/age_setting"
+                    layout="@layout/katsuna_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/gender_setting"
+                    layout="@layout/katsuna_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/hand_setting"
+                    layout="@layout/katsuna_hand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/size_setting"
+                    layout="@layout/katsuna_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/katsuna_divider" />
+
+                <include
+                    android:id="@+id/color_setting"
+                    layout="@layout/katsuna_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

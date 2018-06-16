@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/katsuna_card_handler" />
+
+    <LinearLayout style="@style/KatsunaSetting">
+
+        <RelativeLayout
+            android:id="@+id/age_initial_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.katsuna.commons.controls.KatsunaImageView
+                android:id="@+id/setting_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/setting_image_margin_start"
+                android:src="@drawable/ic_hourglass_full_28dp"
+                tools:ignore="ContentDescription" />
+
+            <com.katsuna.commons.controls.KatsunaTextView
+                android:id="@+id/setting_label"
+                style="@style/KatsunaSettingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/settings_label_margin_start"
+                android:text="@string/kts_age"
+                app:sizeProfileKey="SUBHEADER" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/age_expanded_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/settings_label_margin_start"
+            android:layout_marginTop="@dimen/settings_controls_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.katsuna.commons.controls.KatsunaEditText
+                android:id="@+id/day"
+                style="@style/settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="@string/common_day"
+                android:inputType="number"
+                android:maxLength="2"
+                app:sizeProfileKey="BODY_2" />
+
+            <com.katsuna.commons.controls.KatsunaEditText
+                android:id="@+id/month"
+                style="@style/settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="@string/common_month"
+                app:sizeProfileKey="BODY_2" />
+
+            <com.katsuna.commons.controls.KatsunaEditText
+                android:id="@+id/year"
+                style="@style/settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="@string/common_year"
+                android:inputType="number"
+                android:maxLength="4"
+                app:sizeProfileKey="BODY_2" />
+
+
+            <com.katsuna.commons.controls.KatsunaTextView
+                android:id="@+id/validation_error"
+                style="@style/settings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/common_date_validation_error"
+                android:visibility="gone"
+                app:sizeProfileKey="BODY_2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

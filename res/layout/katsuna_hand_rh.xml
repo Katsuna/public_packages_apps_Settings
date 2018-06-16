@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/katsuna_card_handler" />
+
+    <LinearLayout style="@style/KatsunaSetting">
+
+        <RelativeLayout
+            android:id="@+id/hand_initial_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.katsuna.commons.controls.KatsunaImageView
+                android:id="@+id/setting_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/setting_image_margin_start"
+                android:src="@drawable/ic_dualpan_tool_28dp"
+                tools:ignore="ContentDescription" />
+
+            <com.katsuna.commons.controls.KatsunaTextView
+                android:id="@+id/setting_label"
+                style="@style/KatsunaSettingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/settings_label_margin_start"
+                android:text="@string/kts_hand"
+                app:sizeProfileKey="SUBHEADER" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/hand_expanded_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/settings_label_margin_start"
+            android:layout_marginTop="@dimen/settings_controls_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radio_right_hand"
+                style="@style/settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_rightpan_tool_grey6c_24px"
+                android:text="@string/common_hand_right"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radio_left_hand"
+                style="@style/settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_leftpan_tool_grey6c_24px"
+                android:text="@string/common_hand_left"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</FrameLayout>

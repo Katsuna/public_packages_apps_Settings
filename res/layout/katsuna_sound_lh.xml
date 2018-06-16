@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/katsuna_card_handler_lh" />
+
+    <LinearLayout style="@style/KatsunaSetting">
+
+        <RelativeLayout
+            android:id="@+id/sound_initial_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.katsuna.commons.controls.KatsunaImageView
+                android:id="@+id/setting_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/setting_image_margin_start"
+                android:src="@drawable/ic_volume_up_28dp"
+                tools:ignore="ContentDescription" />
+
+            <com.katsuna.commons.controls.KatsunaTextView
+                android:id="@+id/setting_label"
+                style="@style/KatsunaSettingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/settings_label_margin_start"
+                android:layout_toEndOf="@+id/sound_more"
+                android:gravity="end"
+                android:text="@string/kts_sound"
+                app:sizeProfileKey="SUBHEADER" />
+
+            <com.katsuna.commons.controls.KatsunaButton
+                android:id="@+id/sound_more"
+                style="@style/KatsunaMoreButton.LeftHanded"
+                app:sizeProfileKey="SUBHEADER" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sound_expanded_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/katsuna_setting_divider_lh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_music_note_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2"
+                        tools:ignore="ContentDescription" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/settings_label_margin_start"
+                        android:gravity="end"
+                        android:text="@string/kts_media_volume"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/media_volume_silent"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_silent"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/media_volume_loud"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_loud"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <SeekBar
+                        android:id="@+id/media_volume_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/media_volume_silent"
+                        android:layout_toStartOf="@id/media_volume_loud"
+                        android:background="@null"
+                        android:progressDrawable="@drawable/common_seekbar_progress" />
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/katsuna_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/card_handler_width"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_alarm_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2"
+                        tools:ignore="ContentDescription" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/settings_label_margin_start"
+                        android:gravity="end"
+                        android:text="@string/kts_alarm_volume"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/alarm_volume_silent"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_silent"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/alarm_volume_loud"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_loud"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <SeekBar
+                        android:id="@+id/alarm_volume_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/alarm_volume_silent"
+                        android:layout_toStartOf="@id/alarm_volume_loud"
+                        android:background="@null"
+                        android:progressDrawable="@drawable/common_seekbar_progress" />
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/katsuna_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/card_handler_width"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_notifications_grey6c_24dp"
+                        app:colorProfileKey="PRIMARY_COLOR_2"
+                        tools:ignore="ContentDescription" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/ring_volume_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="end"
+                        android:layout_marginEnd="@dimen/settings_label_margin_start"
+                        android:text="@string/kts_ring_volume"
+                        app:sizeProfileKey="BODY_2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/settings_label_margin_start"
+                    android:layout_marginTop="@dimen/settings_controls_margin">
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/ring_volume_silent"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_silent"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <com.katsuna.commons.controls.KatsunaTextView
+                        android:id="@+id/ring_volume_loud"
+                        style="@style/KatsunaSettingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_volume_loud"
+                        app:sizeProfileKey="BODY_2" />
+
+                    <SeekBar
+                        android:id="@+id/ring_volume_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/ring_volume_silent"
+                        android:layout_toStartOf="@id/ring_volume_loud"
+                        android:background="@null"
+                        android:progressDrawable="@drawable/common_seekbar_progress" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

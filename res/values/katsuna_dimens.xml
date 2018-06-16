@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Katsuna dimens -->
+    <dimen name="settings_side_padding">16dp</dimen>
+    <dimen name="settings_list_padding">16dp</dimen>
+
+    <dimen name="settings_label_margin_start">53dp</dimen>
+    <dimen name="settings_container_margin">25dp</dimen>
+    <dimen name="settings_controls_margin">16dp</dimen>
+
+    <dimen name="qsetting_text_size">16sp</dimen>
+
+    <dimen name="more_button_width">120dp</dimen>
+    <dimen name="setting_image_margin_start">18dp</dimen>
+    <dimen name="card_handler_width">8dp</dimen>
+</resources>
