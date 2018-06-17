@@ -153,7 +153,18 @@
          layouts against a remote context using our local theme colors. Due to the implementation
          details of Theme, we can't reference any local resources and MUST instead use the values
          directly. So use #ff263238 instead of @color/theme_primary and so on. -->
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Settings" />
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Light" >
+        <item name="android:windowBackground">@color/common_grey50</item>
+        <item name="android:colorPrimary">@color/common_grey300</item>
+        <item name="android:colorAccent">@color/common_blue900</item>
+        <item name="android:colorPrimaryDark">@color/common_grey600</item>
+        <item name="android:textColor">@color/common_black87</item>
+        <item name="android:textColorHint">@color/common_black54</item>
+        <item name="android:textColorPrimary">@color/common_black87</item>
+        <item name="android:textColorSecondary">@color/common_black54</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
         <item name="preferenceTheme">@style/PreferenceTheme</item>
