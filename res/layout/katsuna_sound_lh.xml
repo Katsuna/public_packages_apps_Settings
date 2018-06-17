@@ -73,6 +73,7 @@
                         tools:ignore="ContentDescription" />
 
                     <com.katsuna.commons.controls.KatsunaTextView
+                        style="@style/settings_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -148,6 +149,7 @@
                         tools:ignore="ContentDescription" />
 
                     <com.katsuna.commons.controls.KatsunaTextView
+                        style="@style/settings_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -224,6 +226,7 @@
 
                     <com.katsuna.commons.controls.KatsunaTextView
                         android:id="@+id/ring_volume_label"
+                        style="@style/settings_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
