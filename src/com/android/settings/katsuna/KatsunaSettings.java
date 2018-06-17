@@ -113,6 +113,7 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
 
         loadProfile();
         loadValues();
+        setListening(true);
     }
 
     private void loadValues() {
@@ -127,6 +128,18 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
         super.onPause();
         mAgeSetting.updateAge();
         mGenderSetting.updateOtherGender();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        setListening(false);
+    }
+
+    private void setListening(boolean enabled) {
+        mSoundSetting.setListening(enabled);
+        mConnectivitySetting.setListening(enabled);
+        mBrightnessSetting.setListening(enabled);
     }
 
     @Override

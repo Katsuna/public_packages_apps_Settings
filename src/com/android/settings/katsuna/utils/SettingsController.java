@@ -3,6 +3,7 @@ package com.android.settings.katsuna.utils;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.location.LocationManager;
 import android.media.AudioManager;
 import android.net.ConnectivityManager;
@@ -85,16 +86,16 @@ public class SettingsController {
     }
 
     public boolean isDataEnabled(int subId) {
-        return true; //mTelephonyManager.getDataEnabled(subId);
+        return mTelephonyManager.getDataEnabled(subId);
     }
 
     public void setDataEnabled(int subId, boolean enabled) {
-        //mTelephonyManager.setDataEnabled(subId, enabled);
+        mTelephonyManager.setDataEnabled(subId, enabled);
     }
 
     public boolean isBluetoothEnabled() {
         if (mBluetoothAdapter != null) {
-            return true; //mBluetoothAdapter.isEnabled();
+            return mBluetoothAdapter.isEnabled();
         }
         return false;
     }
@@ -102,9 +103,9 @@ public class SettingsController {
     public void setBluetoothEnabled(boolean enabled) {
         if (mBluetoothAdapter != null) {
             if (enabled) {
-                //mBluetoothAdapter.enable();
+                mBluetoothAdapter.enable();
             } else {
-                //mBluetoothAdapter.disable();
+                mBluetoothAdapter.disable();
             }
         }
     }
@@ -119,10 +120,10 @@ public class SettingsController {
     private static final String NEW_MODE_KEY = "NEW_MODE";
 
     public void setGpsEnabled(int mode) {
-/*        Intent intent = new Intent(MODE_CHANGING_ACTION);
+        Intent intent = new Intent(MODE_CHANGING_ACTION);
         intent.putExtra(NEW_MODE_KEY, mode);
         mContext.sendBroadcast(intent, android.Manifest.permission.WRITE_SECURE_SETTINGS);
-        Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.LOCATION_MODE, mode);*/
+        Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.LOCATION_MODE, mode);
     }
 
 }

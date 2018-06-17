@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.SeekBar;
 
 import com.android.settings.R;
+import com.android.settings.katsuna.SoundBroadcastReceiver;
 import com.android.settings.katsuna.utils.SettingsController;
 import com.katsuna.commons.entities.UserProfile;
 import com.katsuna.commons.utils.ColorAdjusterV2;
@@ -31,6 +32,7 @@ public class SoundSetting extends BaseSetting {
     private SettingsController mSettingsController;
     private SeekBar mAlarmVolumeSeekBar;
     private SeekBar mMediaVolumeSeekBar;
+    private SoundBroadcastReceiver mSoundReceiver;
 
     public SoundSetting(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -231,7 +233,12 @@ public class SoundSetting extends BaseSetting {
     }
 
     private void setupListener() {
-
+        mSoundReceiver = new SoundBroadcastReceiver(getContext().getApplicationContext()) {
+            @Override
+            public void onBroadcastReceived() {
+                readVolumes();
+            }
+        };
     }
 
     public void readVolumes() {
@@ -245,6 +252,6 @@ public class SoundSetting extends BaseSetting {
     }
 
     public void setListening(boolean enabled) {
-
+        mSoundReceiver.setListening(enabled);
     }
 }

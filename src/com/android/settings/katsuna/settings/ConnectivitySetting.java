@@ -12,7 +12,12 @@ import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 import com.android.settings.R;
+import com.android.settings.datausage.CellDataPreference;
+import com.android.settings.katsuna.BluetoothBroadcastReceiver;
+import com.android.settings.katsuna.WifiBroadcastReceiver;
 import com.android.settings.katsuna.utils.SettingsController;
+import com.android.settingslib.bluetooth.BluetoothCallback;
+import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.katsuna.commons.entities.UserProfile;
 import com.katsuna.commons.utils.BackgroundGenerator;
 import com.katsuna.commons.utils.ColorAdjusterV2;
@@ -26,6 +31,15 @@ public class ConnectivitySetting extends BaseSetting {
     private ToggleButton mCellularToggle;
     private ToggleButton mBluetoothToggle;
     private SettingsController mSettingsController;
+    private final CellDataPreference.DataStateListener mDataStateListener =
+            new CellDataPreference.DataStateListener() {
+                @Override
+                public void onChange(boolean selfChange) {
+                    readCellularData();
+                }
+            };
+    private WifiBroadcastReceiver mWifiReceiver;
+    private BluetoothBroadcastReceiver mBluetoothReceiver;
     private boolean mManualWifiChange;
     private boolean mManualBluetoothChange;
 
@@ -178,11 +192,50 @@ public class ConnectivitySetting extends BaseSetting {
     }
 
     private void setupBluetoothListener() {
+        mBluetoothReceiver = new BluetoothBroadcastReceiver(getContext().getApplicationContext(),
+                new BluetoothCallback() {
+                    @Override
+                    public void onBluetoothStateChanged(int bluetoothState) {
+                        if (mManualBluetoothChange) {
+                            mManualBluetoothChange = false;
+                            return;
+                        }
 
+                        readBluetooth();
+                    }
+
+                    @Override
+                    public void onScanningStateChanged(boolean started) {
+
+                    }
+
+                    @Override
+                    public void onDeviceAdded(CachedBluetoothDevice cachedDevice) {
+
+                    }
+
+                    @Override
+                    public void onDeviceDeleted(CachedBluetoothDevice cachedDevice) {
+
+                    }
+
+                    @Override
+                    public void onDeviceBondStateChanged(CachedBluetoothDevice cachedDevice, int bondState) {
+
+                    }
+
+                    @Override
+                    public void onConnectionStateChanged(CachedBluetoothDevice cachedDevice, int state) {
+
+                    }
+                });
     }
 
     public void setListening(boolean enabled) {
-
+        mWifiReceiver.setListening(enabled);
+        mBluetoothReceiver.setListening(enabled);
+        mDataStateListener.setListener(enabled, SettingsController.SINGLE_SIM_DEFAULT_SUB_ID,
+                getContext().getApplicationContext());
     }
 
 }
