@@ -84,14 +84,6 @@
                 <include layout="@layout/katsuna_divider" />
 
                 <include
-                    android:id="@+id/notification_setting"
-                    layout="@layout/katsuna_notification"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <include layout="@layout/katsuna_divider" />
-
-                <include
                     android:id="@+id/more_setting"
                     layout="@layout/katsuna_more"
                     android:layout_width="match_parent"

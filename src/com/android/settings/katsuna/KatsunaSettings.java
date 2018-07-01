@@ -40,7 +40,6 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
 
     private BrightnessSetting mBrightnessSetting;
 
-    private NotificationSetting mNotificationSetting;
     private AgeSetting mAgeSetting;
     private GenderSetting mGenderSetting;
     private HandSetting mHandSetting;
@@ -81,9 +80,6 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
         mLocationSetting.setSettingsCallback(this);
         mUpdateSetting = findViewById(R.id.update_setting);
         mUpdateSetting.setSettingsCallback(this);
-
-        mNotificationSetting = findViewById(R.id.notification_setting);
-        mNotificationSetting.setSettingsCallback(this);
 
         mMoreSetting = findViewById(R.id.more_setting);
         mMoreSetting.setSettingsCallback(this);
@@ -176,7 +172,6 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
         mSoundSetting.hide();
         mConnectivitySetting.hide();
         mLocationSetting.hide();
-        mNotificationSetting.hide();
         mAgeSetting.hide();
         mGenderSetting.hide();
         mHandSetting.hide();
@@ -209,10 +204,6 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
         mConnectivitySetting.loadProfile(mProfile);
         mLocationSetting.loadProfile(mProfile);
         mUpdateSetting.loadProfile(mProfile);
-
-        // load notification
-        mNotificationSetting.enable(mProfile.notification == Notification.ON);
-        mNotificationSetting.loadProfile(mProfile);
 
         mMoreSetting.loadProfile(mProfile);
 
@@ -277,7 +268,6 @@ public class KatsunaSettings extends Activity implements SettingsCallback {
         mConnectivitySetting.adjustSettingIcon();
         mLocationSetting.adjustSettingIcon();
         mUpdateSetting.adjustSettingIcon();
-        mNotificationSetting.adjustSettingIcon();
         mMoreSetting.adjustSettingIcon();
         mAgeSetting.adjustSettingIcon();
         mGenderSetting.adjustSettingIcon();
