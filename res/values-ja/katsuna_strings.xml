@@ -3,6 +3,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Device info: name of the version of the Katsuna ROM currently installed -->
   <string name="katsuna_version">Katsuna version</string>
+  <string name="katsuna_settings">Katsuna settings</string>
   <!-- Device info: shown when the version of the Katsuna ROM is unknown -->
   <string name="katsuna_version_default">Unknown</string>
   <!-- Katsuna main menu category header [CHAR LIMIT=40] -->
@@ -60,4 +61,6 @@
   <string name="usability_settings">Usability settings</string>
   <!-- Label for last update settings entry. -->
   <string name="last_update_name">Name</string>
+  <!-- Label for advanced settings. -->
+  <string name="advanced_settings">Advanced settings</string>
 </resources>
