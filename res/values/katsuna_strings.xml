@@ -53,9 +53,6 @@
 	<!-- Label for last installed update -->
 	<string name="kts_last_update">Last installed update</string>
 
-	<!-- Label for katsuna notification setting -->
-	<string name="kts_notification">Katsuna notification</string>
-
 	<!-- Label for age setting -->
 	<string name="kts_age">Age</string>
 
