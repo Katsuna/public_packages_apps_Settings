@@ -3,7 +3,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Device info: name of the version of the Katsuna ROM currently installed -->
   <string name="katsuna_version">اصدار كتسونا</string>
-  <string name="katsuna_settings">إعدادات كاتسونا</string>
   <!-- Device info: shown when the version of the Katsuna ROM is unknown -->
   <string name="katsuna_version_default">مجهول</string>
   <!-- Katsuna main menu category header [CHAR LIMIT=40] -->
@@ -35,8 +34,6 @@
   <string name="kts_check_update">التحقق من وجود تحديث</string>
   <!-- Label for last installed update -->
   <string name="kts_last_update">آخر تحديث مثبت</string>
-  <!-- Label for katsuna notification setting -->
-  <string name="kts_notification">إعلام كاتسونا</string>
   <!-- Label for age setting -->
   <string name="kts_age">العمر</string>
   <!-- Label for age setting description -->
@@ -55,6 +52,4 @@
   <string name="usability_settings">إعدادات قابلية الاستخدام</string>
   <!-- Label for last update settings entry. -->
   <string name="last_update_name">الإسم</string>
-  <!-- Label for advanced settings. -->
-  <string name="advanced_settings">إعدادات متقدمة</string>
 </resources>

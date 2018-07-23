@@ -3,7 +3,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Device info: name of the version of the Katsuna ROM currently installed -->
   <string name="katsuna_version">Katsuna version</string>
-  <string name="katsuna_settings">Katsuna settings</string>
   <!-- Device info: shown when the version of the Katsuna ROM is unknown -->
   <string name="katsuna_version_default">Inconnu</string>
   <!-- Katsuna main menu category header [CHAR LIMIT=40] -->
@@ -35,8 +34,6 @@
   <string name="kts_check_update">Contrôler mise à niveau</string>
   <!-- Label for last installed update -->
   <string name="kts_last_update">Dernière mise à jour installée</string>
-  <!-- Label for katsuna notification setting -->
-  <string name="kts_notification">Notification de Katsuna</string>
   <!-- Label for age setting -->
   <string name="kts_age">Âge</string>
   <!-- Label for age setting description -->
@@ -68,6 +65,4 @@ si ton cœur ne les dresse pas devant toi.</string>
   <string name="usability_settings">Paramètres de l’utilisabilité</string>
   <!-- Label for last update settings entry. -->
   <string name="last_update_name">Nom</string>
-  <!-- Label for advanced settings. -->
-  <string name="advanced_settings">Advanced settings</string>
 </resources>
