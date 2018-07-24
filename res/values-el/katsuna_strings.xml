@@ -29,7 +29,7 @@
   <!-- Label for bluetooth -->
   <string name="bluetooth">Bluetooth</string>
   <!-- Label for update setting -->
-  <string name="kts_update">Ενημερωμένη έκδοση</string>
+  <string name="kts_update">Ενημερώσεις</string>
   <!-- Label for check for update action -->
   <string name="kts_check_update">Έλεγχος για ενημέρωση</string>
   <!-- Label for last installed update -->
