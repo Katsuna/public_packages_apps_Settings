@@ -20,7 +20,6 @@ import com.android.settings.katsuna.settings.GenderSetting;
 import com.android.settings.katsuna.settings.HandSetting;
 import com.android.settings.katsuna.settings.LocationSetting;
 import com.android.settings.katsuna.settings.MoreSetting;
-import com.android.settings.katsuna.settings.NotificationSetting;
 import com.android.settings.katsuna.settings.SizeSetting;
 import com.android.settings.katsuna.settings.SoundSetting;
 import com.android.settings.katsuna.settings.UpdateSetting;
