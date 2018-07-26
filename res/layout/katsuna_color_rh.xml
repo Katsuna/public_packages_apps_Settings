@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/settings_label_margin_start"
-                android:text="@string/kts_color"
+                android:text="@string/common_color"
                 app:sizeProfileKey="SUBHEADER" />
 
         </RelativeLayout>
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/kts_select_palette"
+                android:text="@string/common_select_palette"
                 app:sizeProfileKey="BODY_2" />
 
             <include

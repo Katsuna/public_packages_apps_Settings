@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/settings_label_margin_start"
-                android:text="@string/kts_age"
+                android:text="@string/common_age"
                 app:sizeProfileKey="SUBHEADER" />
 
         </RelativeLayout>

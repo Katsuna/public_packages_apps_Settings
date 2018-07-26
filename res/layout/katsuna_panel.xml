@@ -94,7 +94,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:id="@+id/usability_settings_card"
+            android:id="@+id/common_usability_settings_card"
             style="@style/KatsunaCard">
 
             <RelativeLayout
@@ -118,7 +118,7 @@
                 <TextView
                     android:id="@+id/text_usability_settings"
                     style="@style/KatsunaText.SettingsCategory"
-                    android:text="@string/usability_settings" />
+                    android:text="@string/common_usability_settings" />
 
                 <include layout="@layout/katsuna_divider" />
 

@@ -63,7 +63,7 @@
                     android:layout_marginBottom="26dp"
                     android:layout_marginEnd="4dp"
                     android:gravity="center"
-                    android:text="@string/kts_ithaca_full"
+                    android:text="@string/common_ithaca_full"
                     app:sizeProfileKey="BODY_1" />
 
                 <LinearLayout
