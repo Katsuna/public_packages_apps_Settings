@@ -54,7 +54,7 @@
 	<string name="kts_last_update">Last installed update</string>
 
 	<!-- Label for quick access settings section -->
-
+        <string name="quick_access_settings">Quick Access settings</string>
 
 	<!-- Label for last update settings entry. -->
 	<string name="last_update_name">Name</string>
