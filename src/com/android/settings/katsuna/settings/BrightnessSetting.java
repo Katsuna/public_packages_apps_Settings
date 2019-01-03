@@ -65,7 +65,7 @@ public class BrightnessSetting extends BaseSetting {
         mBrightnessLabelDark = findViewById(R.id.brightness_label_dark);
         mBrightnessLabelLight = findViewById(R.id.brightness_label_light);
 
-        mSettingsController = new SettingsController(getContext());
+        mSettingsController = SettingsController.get();
 
         setupBrightnessControl();
         readBrightness();

@@ -90,6 +90,7 @@
     <uses-permission android:name="com.katsuna.services.datastore.permission.preferences" />
 
     <application android:label="@string/settings_label"
+            android:name=".SettingsApp"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
             android:theme="@style/Theme.Settings"

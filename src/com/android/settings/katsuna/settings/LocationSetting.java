@@ -58,7 +58,7 @@ public class LocationSetting extends BaseSetting {
         });
 
         mGpsToggle = findViewById(R.id.location_toggle);
-        mSettingsController = new SettingsController(getContext());
+        mSettingsController = SettingsController.get();
 
         setupGpsControl();
         readGpsControl();

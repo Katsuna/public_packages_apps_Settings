@@ -69,7 +69,7 @@ public class ConnectivitySetting extends BaseSetting {
             }
         });
 
-        mSettingsController = new SettingsController(getContext());
+        mSettingsController = SettingsController.get();
 
         mExpandedContainer = findViewById(R.id.connectivity_expanded_container);
 

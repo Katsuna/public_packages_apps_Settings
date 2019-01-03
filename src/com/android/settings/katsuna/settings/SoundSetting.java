@@ -69,7 +69,7 @@ public class SoundSetting extends BaseSetting {
             }
         });
 
-        mSettingsController = new SettingsController(getContext());
+        mSettingsController = SettingsController.get();
 
         mMediaVolumeSeekBar = findViewById(R.id.media_volume_seekbar);
         mAlarmVolumeSeekBar = findViewById(R.id.alarm_volume_seekbar);
