@@ -34,35 +34,8 @@
   <string name="kts_check_update">Contrôler mise à niveau</string>
   <!-- Label for last installed update -->
   <string name="kts_last_update">Dernière mise à jour installée</string>
-  <!-- Label for age setting -->
-  <string name="kts_age">Âge</string>
-  <!-- Label for age setting description -->
-  <string name="kts_age_hint">Entrez votre âge</string>
-  <!-- Hand of use settings label -->
-  <string name="kts_hand">Main préférée d’utilisation</string>
-  <!-- Text sample for optical size profile selection -->
-  <string name="kts_ithaca_full">Quand tu partiras pour Ithaque,
-souhaite que le chemin soit long,
-riche en péripéties et en expériences.
-
-Ne crains ni les Lestrygons, ni les Cyclopes,
-ni la colère de Neptune.
-Tu ne verras rien de pareil sur ta route si tes pensées restent hautes, s
-i ton corps et ton âme ne se laissent effleurer
-que par des émotions sans bassesse.
-
-Tu ne rencontreras ni les Lestrygons, ni les Cyclopes,
-ni le farouche Neptune,
-si tu ne les portes pas en toi-même,
-si ton cœur ne les dresse pas devant toi.</string>
-  <!-- Color palette label -->
-  <string name="kts_color">Palettes de couleurs</string>
-  <!-- Color palette selection label -->
-  <string name="kts_select_palette">Choisissez votre palette de couleurs</string>
   <!-- Label for quick access settings section -->
   <string name="quick_access_settings">Paramètres à accès rapide </string>
-  <!-- Label for usability settings section -->
-  <string name="usability_settings">Paramètres de l’utilisabilité</string>
   <!-- Label for last update settings entry. -->
   <string name="last_update_name">Nom</string>
 </resources>

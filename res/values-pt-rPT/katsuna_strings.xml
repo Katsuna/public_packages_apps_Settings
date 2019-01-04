@@ -34,28 +34,8 @@
   <string name="kts_check_update">Check for update</string>
   <!-- Label for last installed update -->
   <string name="kts_last_update">Last installed update</string>
-  <!-- Label for age setting -->
-  <string name="kts_age">Age</string>
-  <!-- Label for age setting description -->
-  <string name="kts_age_hint">Enter your age</string>
-  <!-- Hand of use settings label -->
-  <string name="kts_hand">Preferred hand of use</string>
-  <!-- Text sample for optical size profile selection -->
-  <string name="kts_ithaca_full">As you set out for Ithaka hope the voyage is a long one, full of
-        adventure, full of discovery. Laistrygonians and Cyclops, angry Poseidon—don’t be afraid of
-        them: you’ll never find things like that on your way as long as you keep your thoughts
-        raised high, as long as a rare excitement stirs your spirit and your body. Laistrygonians
-        and Cyclops, wild Poseidon—you won’t encounter them unless you bring them along inside your
-        soul, unless your soul sets them up in front of you.
-    </string>
-  <!-- Color palette label -->
-  <string name="kts_color">Colour palettes</string>
-  <!-- Color palette selection label -->
-  <string name="kts_select_palette">Select your colour palette</string>
   <!-- Label for quick access settings section -->
   <string name="quick_access_settings">Quick Access settings</string>
-  <!-- Label for usability settings section -->
-  <string name="usability_settings">Usability settings</string>
   <!-- Label for last update settings entry. -->
   <string name="last_update_name">Nome</string>
 </resources>
