@@ -47,8 +47,11 @@ public class AutoBrightnessPreferenceController extends AbstractPreferenceContro
 
     @Override
     public boolean isAvailable() {
-        return mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_automatic_brightness_available);
+        /* This value is set by com.android.internal.R.bool.config_automatic_brightness_available.
+        We have already set this value to false globally in Katsuna, but Pixel's vendor overrides
+        it in framework-res__auto_generated_rro.apk.
+        TODO: Revert this when a better way to deal with the overlay apk is found. */
+        return false;
     }
 
     @Override
